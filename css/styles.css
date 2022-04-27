@@ -1,11 +1,13 @@
 /* Grid */
-.layout {
-  /* Set your own grid   */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 400px;
-  grid-column-gap: 1em;
+.parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
+
+.date{ grid-area: 1 / 1 / 2 / 3; }
 
 /* Widgets */
 section {
