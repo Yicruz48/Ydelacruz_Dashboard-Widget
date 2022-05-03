@@ -1,16 +1,21 @@
-/* Grid */
-.parent {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+/* Body */
+body{
+   display: flex; 
+   justify-content: center;
 }
 
-.date{ grid-area: 1 / 1 / 2 / 3; }
+
+.layout {
+  /* Flexbox   */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+ 
+}
 
 /* Widgets */
 section {
+  display: flex;
   background: lightgray;
   padding: 1em;
   
@@ -20,6 +25,7 @@ section {
 
 /* Time */
 .time {
+  order:2:
 }
 
 .hours {
@@ -37,7 +43,7 @@ section {
 
 /* Date */
 .date {
-  
+  order: 1;
 }
 
 .month {
@@ -54,7 +60,7 @@ section {
 
 /* Weather */
 .weather {
-  
+  order: 3;
 }
 
 .city {
