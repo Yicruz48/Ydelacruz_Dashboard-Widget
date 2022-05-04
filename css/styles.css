@@ -1,7 +1,28 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+/* font styles */
+h1{
+  font-family: 'Quicksand', sans-serif;
+  text-transform: uppercase;
+  color: #09A599;
+  font-weight: 600;
+  text-align: center;
+  font-size: 30px;
+}
 /* Body */
 body{
    display: flex; 
    justify-content: center;
+   margin-top: 50px;
+}
+
+data{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
 }
 
 
@@ -16,16 +37,26 @@ body{
 /* Widgets */
 section {
   display: flex;
-  background: lightgray;
   padding: 1em;
-  
-  /* Relative Parent. Absolute Child */
+  border-radius: 30px;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-color: #09A599;
+  flex-direction: column;
+ /* Relative Parent. Absolute Child */
   position: relative;
 }
 
 /* Time */
 .time {
-  order:2:
+  order:3;
+/* text styling */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+
 }
 
 .hours {
@@ -43,7 +74,11 @@ section {
 
 /* Date */
 .date {
-  order: 1;
+  order: 2;
+  /* font styling */
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
 }
 
 .month {
@@ -60,7 +95,7 @@ section {
 
 /* Weather */
 .weather {
-  order: 3;
+  order: 1;
 }
 
 .city {
@@ -72,5 +107,6 @@ section {
 }
 
 .weather img {
-  
-}
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
